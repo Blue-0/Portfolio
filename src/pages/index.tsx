@@ -7,7 +7,7 @@ export default function Home() {
     <>
 
       <Seo title="Denis Fluteaux Portfolio" description="Mon Porfolio trop classe" />
-      <h1> Hello World 485641653</h1>
+      <h1> Hello World</h1>
 
     </>
     );
