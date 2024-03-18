@@ -155,6 +155,10 @@ module.exports = {
       ],
       extend: {},
     },
+
+    borderRadius: {
+      DEFAULT: '10px',
+    },
     plugins: [],
   },
 };
