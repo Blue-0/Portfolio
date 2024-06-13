@@ -32,50 +32,71 @@ export const Typography = ({
   children,
 }: Props) => {
   let variantStyles: string = "",
-    colorStyles: string = "";
+    colorStyles: string = "",
+    fontStyles: string = "";
 
   switch (variant) {
     case "display":
       variantStyles = "text-8xl";
+      fontStyles="font-instrument"
       break;
     case "h1":
       variantStyles = "text-7xl";
+      fontStyles="font-instrument"
+
       break;
     case "h2":
       variantStyles = "text-6xl";
+      fontStyles="font-instrument"
+
       break;
     case "h3": //Default
       variantStyles = "text-5xl";
+      fontStyles="font-instrument";
+
       break;
     case "h4":
       variantStyles = "text-4xl";
+      fontStyles="font-instrument";
+
       break;
     case "h5":
       variantStyles = "text-3xl";
+      fontStyles="font-instrument";
+
       break;
     case "lead":
       variantStyles = "text-2xl";
+      fontStyles="font-instrument";
+
       break;
     case "body-lg":
       variantStyles = "text-lg";
+      fontStyles="font-dongle";
       break;
     case "body-base":
       variantStyles = "text-base";
+      fontStyles="font-dongle";
       break;
     case "body-sm":
       variantStyles = "text-sm";
+      fontStyles="font-dongle";
       break;
     case "caption1":
       variantStyles = "text-caption1";
+      fontStyles="font-dongle";
       break;
     case "caption2":
       variantStyles = "text-caption2";
+      fontStyles="font-dongle";
       break;
     case "caption3":
       variantStyles = "text-caption3";
+      fontStyles="font-dongle";
       break;
     case "caption4":
       variantStyles = "text-caption4";
+      fontStyles="font-dongle";
       break;
   }
 
@@ -102,6 +123,7 @@ export const Typography = ({
       className={clsx(
         variantStyles,
         colorStyles,
+        fontStyles,
         weight === "meduim" && "font-medium",
         className,
       )}

@@ -1,3 +1,16 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+a:hover {
+    @apply text-secondary-600;
+}
+
+.animate, a, a:hover{
+    transition: all 0.2s ease-in-out;
+}

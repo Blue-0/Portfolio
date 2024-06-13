@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,6 +7,10 @@ module.exports = {
     "./components/**/*.{html,js}",
   ],
   theme: {
+    fontFamily: {
+      "instrument": ['"Instrument Sans"', "serif"],
+      "dongle": ['"Dongle"', "serif"],
+    },
     colors: {
       white: "#ffffff",
       primary: {
@@ -23,6 +28,7 @@ module.exports = {
         600: "#BD4336",
       },
       gray: {
+        300: "#FAFAFA",
         400: "#F2F2F2",
         500: "#E5E5E5",
         600: "#B2B2B2",
@@ -42,7 +48,7 @@ module.exports = {
         },
       ],
       "7xl": [
-        "72px",
+        "96px",
         {
           lineHeight: "80px",
           letterSpacing: "-4.5px",
@@ -50,7 +56,7 @@ module.exports = {
         },
       ],
       "6xl": [
-        "55px",
+        "73px",
         {
           lineHeight: "60px",
           letterSpacing: "-2.5px",
@@ -58,7 +64,7 @@ module.exports = {
         },
       ],
       "5xl": [
-        "48px",
+        "64px",
         {
           lineHeight: "54px",
           letterSpacing: "-1.6px",
@@ -66,7 +72,7 @@ module.exports = {
         },
       ],
       "4xl": [
-        "120px",
+        "48px",
         {
           lineHeight: "44px",
           letterSpacing: "-1.2px",
@@ -74,7 +80,7 @@ module.exports = {
         },
       ],
       "3xl": [
-        "28px",
+        "45px",
         {
           lineHeight: "34px",
           letterSpacing: "-0.8px",
@@ -82,7 +88,7 @@ module.exports = {
         },
       ],
       "2xl": [
-        "24px",
+        "40px",
         {
           lineHeight: "30px",
           letterSpacing: "-1px",
@@ -90,7 +96,7 @@ module.exports = {
         },
       ],
       xl: [
-        "24px",
+        "28pt",
         {
           lineHeight: "30px",
           letterSpacing: "-1px",
@@ -98,7 +104,7 @@ module.exports = {
         },
       ],
       lg: [
-        "21px",
+        "37px",
         {
           lineHeight: "30px",
           letterSpacing: "-0.8px",
@@ -106,7 +112,7 @@ module.exports = {
         },
       ],
       base: [
-        "17px",
+        "29px",
         {
           lineHeight: "25px",
           letterSpacing: "-0.7px",
@@ -114,7 +120,15 @@ module.exports = {
         },
       ],
       sm: [
-        "15px",
+        "24px",
+        {
+          lineHeight: "23px",
+          letterSpacing: "-0.6px",
+          fontWeight: "400",
+        },
+      ],
+      xs: [
+        "16px",
         {
           lineHeight: "23px",
           letterSpacing: "-0.6px",
@@ -122,7 +136,7 @@ module.exports = {
         },
       ],
       caption1: [
-        "20px",
+        "29px",
         {
           lineHeight: "24px",
           letterSpacing: "-0.6px",
@@ -130,7 +144,7 @@ module.exports = {
         },
       ],
       caption2: [
-        "18px",
+        "27px",
         {
           lineHeight: "20px",
           letterSpacing: "-0.3px",
@@ -138,7 +152,7 @@ module.exports = {
         },
       ],
       caption3: [
-        "16px",
+        "24px",
         {
           lineHeight: "18px",
           letterSpacing: "-0.5px",
@@ -146,7 +160,7 @@ module.exports = {
         },
       ],
       caption4: [
-        "13px",
+        "21px",
         {
           lineHeight: "15px",
           letterSpacing: "-0.2px",
@@ -158,6 +172,7 @@ module.exports = {
 
     borderRadius: {
       DEFAULT: '10px',
+      full: '999999px',
     },
     plugins: [],
   },

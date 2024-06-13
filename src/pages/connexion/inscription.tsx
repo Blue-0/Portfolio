@@ -13,16 +13,16 @@ import { Footer } from "@/ui/components/navigation/footer";
 import { Layout } from "@/ui/components/layout/layout";
 import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.container";
 
-export default function Home() {
+export default function Register() {
   return (
     <>
       <Seo
-        title="Denis Fluteaux Portfolio"
+        title="Inscription Portfolio"
         description="Mon Porfolio trop classe"
       />
 
     <Layout>
-      <LandingPageContainer />
+      Login
     </Layout>
     </>
   );
