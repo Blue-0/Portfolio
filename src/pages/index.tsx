@@ -21,7 +21,7 @@ export default function Home() {
         description="Mon Porfolio trop classe"
       />
 
-    <Layout>
+    <Layout isDisplayBreadcrumbs={false}>
       <LandingPageContainer />
     </Layout>
     </>
